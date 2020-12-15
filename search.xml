@@ -1,56 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello</title>
-    <url>/2020/12/13/he/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+    <title>活成自己想要的样子--记我为什么要写博客</title>
+    <url>/2020/12/15/%E6%B4%BB%E6%88%90%E8%87%AA%E5%B7%B1%E6%83%B3%E8%A6%81%E7%9A%84%E6%A0%B7%E5%AD%90-%E8%AE%B0%E6%88%91%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%86%99%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<p>今天是我的生日，是一个对我而言比较特殊的日子，所以总得写点什么。  </p>
+<a id="more"></a>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<h2 id="生日"><a href="#生日" class="headerlink" title="生日"></a>生日</h2><p>虽然这个博客两天前就差不多建好了，但是一直以来都是在测试和学习相关内容，没有时间去写属于自己的东西，所以今天写也是挺开心的，生日给了我一个难得的契机。  </p>
+<p>好吧今天其实过得并不好，自己还在健美课上受伤了；其实我还是有一些感悟的，不过今天大概率没有心情说，留着等我以后更得了。</p>
+<p>未来还是要好好努力，别让自己后悔的同时保持每天心情的愉悦，这就是我的生日愿望了。至于说以前的事情，那就对自己做一个和解吧，今年因为疫情的缘故呆在家里也没有好好学习，自己也焦虑过一段时间，但是总得来说，还是对自己很满意了，自己保研到了自己想要去的地方，然后还认识了一些人，自己的社交圈子更大了一点（虽然自己并不喜欢），也忙忙碌碌的，每天都会学一些新的知识，此外导师给的工资也挺满意的，相比于其他研究生来说。  </p>
+<p>还有就是自己减肥成功，身边的人都说我变瘦了，不过我自己感知却并不强，感觉自己还是以前那个自己，从表面上的的确确减了20斤，也算是很棒了，希望在研究生阶段自己能坚持健身，到毕业的时候一身肌肉哈哈哈。</p>
+<p>这些大概就是我的生日愿望了吧，最重要的还是自己身体健康每天都开心。人的生命只有一次，这是一个老话，但是每一天其实也只有一次……所以每一天都要珍惜呐。</p>
+<p>不过人终究也是要死亡的，再说下去感觉就有点虚了。就算我现在所追求的，终是某种虚妄之事，但只要我不后悔，那就没有关系。</p>
+<h2 id="关于我为什么要写博客这件事"><a href="#关于我为什么要写博客这件事" class="headerlink" title="关于我为什么要写博客这件事"></a>关于我为什么要写博客这件事</h2><p>其实最主要的还是希望自己能记下一些事情，<strong>虽然自己也有写日记，但是有一些内容（比如说学习、技术等等）还是不适合放在OneNote里面</strong>，因为那样子查找过于艰难了，写博客，当然得要写技术类的，至于说感受之类的，那也可以写，但是主要阵地肯定是OneNote。而且自己也不愿意去暴露个人隐私。</p>
+<p>其次自己也经常去折腾一些软件之类的，这些还是非常繁琐的事情，可以说非常没有理论性了，唯有记录下来才方便日后的查询，顺便也可以帮助一下路过的人。</p>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>2020年马上就要过去了，加油！</p>
 ]]></content>
       <categories>
-        <category>test</category>
+        <category>life</category>
       </categories>
       <tags>
-        <tag>Test</tag>
-        <tag>another Tag</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2020/12/13/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>test my site</title>
-    <url>/2020/12/13/test-my-site/</url>
-    <content><![CDATA[<p>####this is a test<br>sdkicgadh</p>
-]]></content>
-      <tags>
-        <tag>tests</tag>
-        <tag>markdown</tag>
+        <tag>博客</tag>
+        <tag>思考</tag>
+        <tag>总结</tag>
       </tags>
   </entry>
 </search>
