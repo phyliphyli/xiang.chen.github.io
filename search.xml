@@ -25,4 +25,52 @@
         <tag>总结</tag>
       </tags>
   </entry>
+  <entry>
+    <title>C语言中main函数有关的东西</title>
+    <url>/2020/12/20/C%E8%AF%AD%E8%A8%80%E4%B8%ADmain%E5%87%BD%E6%95%B0%E6%9C%89%E5%85%B3%E7%9A%84%E4%B8%9C%E8%A5%BF/</url>
+    <content><![CDATA[<p>一直好奇C语言中main函数里面的一些东西，今天查了些许资料，把主要内容记录一下。</p>
+<a id="more"></a>
+<p>一个典型的C语言函数如下：</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello world\n&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="1-其中main函数的类型是int，这一点是必须的，不能是void，因为有的编译器并不支持-void-main"><a href="#1-其中main函数的类型是int，这一点是必须的，不能是void，因为有的编译器并不支持-void-main" class="headerlink" title="1. 其中main函数的类型是int，这一点是必须的，不能是void，因为有的编译器并不支持 void main()"></a>1. 其中<code>main</code>函数的类型是<code>int</code>，这一点是必须的，不能是void，因为有的编译器并不支持 <code>void main()</code></h2><h2 id="2-在最新的-C99-标准中，只有以下两种定义方式是正确的："><a href="#2-在最新的-C99-标准中，只有以下两种定义方式是正确的：" class="headerlink" title="2. 在最新的 C99 标准中，只有以下两种定义方式是正确的："></a>2. 在最新的 C99 标准中，只有以下两种定义方式是正确的：</h2><pre><code><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">( <span class="keyword">void</span> )</span>  <span class="comment">/* 无参数形式 */</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    ...</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">( <span class="keyword">int</span> argc, <span class="keyword">char</span> *argv[] )</span> <span class="comment">/* 带参数形式 */</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    ...</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+所以还是写 `int main`比较好，具体为什么不支持`void main`是因为一开始C 语言只有`int`这一种类型</code></pre>
+<h2 id="3-C语言的返回值"><a href="#3-C语言的返回值" class="headerlink" title="3. C语言的返回值"></a>3. C语言的返回值</h2><p>返回值返回给哪里去了呢？？<br>答案是返回给操作系统了，表示程序退出的状态</p>
+<p>如果返回是0，那么表示程序正常退出<br>这个返回值是可以自己定义的<br>在Linux系统中<code>$?</code>是上一个命令的退出状态</p>
+<p>例如我编译并执行下面这段程序：</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello world\n&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>然后再在shell中输入：<br><code>$?</code><br>那么会输出：<br><code>1: command not found</code></p>
+<p>或者直接<code>echo &quot;$?&quot;</code><br>那么会输出 <code>1</code><br>同理，<code>return 0</code>会使得<code>$?</code>变成<code>0</code></p>
+<p>而在Windows 操作系统中，假如说用cmd 执行了刚刚编译出来的程序，那么可以通过：<br><code>echo %ERRORLEVEL%</code><br>来查看返回值</p>
+<h2 id="4-用-amp-amp-连接两个命令，假如前一个命令没有正常退出，那后一个程序不会执行"><a href="#4-用-amp-amp-连接两个命令，假如前一个命令没有正常退出，那后一个程序不会执行" class="headerlink" title="4. 用&amp;&amp; 连接两个命令，假如前一个命令没有正常退出，那后一个程序不会执行"></a>4. 用&amp;&amp; 连接两个命令，假如前一个命令没有正常退出，那后一个程序不会执行</h2><p>例如：</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">gcc a.c <span class="meta">#a.c 返回0，输出Helo World</span></span><br><span class="line">./a.out &amp;&amp; ./a.out</span><br><span class="line">#那么会返回 </span><br><span class="line">&gt; Hello world</span><br><span class="line">&gt; Hello world</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">gcc a.c <span class="meta">#a.c 返回1，输出Helo World</span></span><br><span class="line">./a.out &amp;&amp; ./a.out</span><br><span class="line">#那么会返回 </span><br><span class="line">&gt; Hello world</span><br><span class="line">因为前一个./a.out 返回<span class="number">1</span>， 会使得后一个a.out不执行</span><br></pre></td></tr></table></figure>
+
+<h2 id="4-最后，感谢以下内容："><a href="#4-最后，感谢以下内容：" class="headerlink" title="4. 最后，感谢以下内容："></a>4. 最后，感谢以下内容：</h2><p><a href="https://blog.csdn.net/piaojun_pj/article/details/5986516">https://blog.csdn.net/piaojun_pj/article/details/5986516</a></p>
+<p><a href="http://c.biancheng.net/cpp/html/725.html">http://c.biancheng.net/cpp/html/725.html</a></p>
+]]></content>
+      <categories>
+        <category>编程</category>
+      </categories>
+      <tags>
+        <tag>C</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>英语中的meta词缀</title>
+    <url>/2020/12/19/%E8%8B%B1%E8%AF%AD%E4%B8%AD%E7%9A%84meta%E8%AF%8D%E7%BC%80/</url>
+    <content><![CDATA[<p>英语中meta的含义：</p>
+<blockquote>
+<p>“Meta” is a prefix meaning “referring to itself.”</p>
+</blockquote>
+<p>翻译成“元”， 例如元数据，元思考<br>元数据：关于数据的数据<br>元思考：关于思考的思考</p>
+<p>metacharacters: 关于字符的字符</p>
+]]></content>
+      <categories>
+        <category>小知识</category>
+      </categories>
+  </entry>
 </search>
