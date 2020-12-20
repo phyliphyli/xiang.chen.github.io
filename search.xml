@@ -49,8 +49,22 @@
 
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line">gcc a.c <span class="meta">#a.c 返回1，输出Helo World</span></span><br><span class="line">./a.out &amp;&amp; ./a.out</span><br><span class="line">#那么会返回 </span><br><span class="line">&gt; Hello world</span><br><span class="line">因为前一个./a.out 返回<span class="number">1</span>， 会使得后一个a.out不执行</span><br></pre></td></tr></table></figure>
 
-<h2 id="4-最后，感谢以下内容："><a href="#4-最后，感谢以下内容：" class="headerlink" title="4. 最后，感谢以下内容："></a>4. 最后，感谢以下内容：</h2><p><a href="https://blog.csdn.net/piaojun_pj/article/details/5986516">https://blog.csdn.net/piaojun_pj/article/details/5986516</a></p>
-<p><a href="http://c.biancheng.net/cpp/html/725.html">http://c.biancheng.net/cpp/html/725.html</a></p>
+<h2 id="4-上面的内容参考了以下内容"><a href="#4-上面的内容参考了以下内容" class="headerlink" title="4. 上面的内容参考了以下内容"></a>4. 上面的内容参考了以下内容</h2><p><a href="https://blog.csdn.net/piaojun_pj/article/details/5986516">https://blog.csdn.net/piaojun_pj/article/details/5986516</a><br><a href="http://c.biancheng.net/cpp/html/725.html">http://c.biancheng.net/cpp/html/725.html</a></p>
+<h2 id="5-假如说这个芯片不是通用的CPU，而是一个嵌入式芯片，连操作系统都没有，情况会怎么样"><a href="#5-假如说这个芯片不是通用的CPU，而是一个嵌入式芯片，连操作系统都没有，情况会怎么样" class="headerlink" title="5. 假如说这个芯片不是通用的CPU，而是一个嵌入式芯片，连操作系统都没有，情况会怎么样"></a>5. 假如说这个芯片不是通用的CPU，而是一个嵌入式芯片，连操作系统都没有，情况会怎么样</h2><p>首先，很多时候嵌入式芯片连操作系统都没有，但是也有的是有的，常见的嵌入式操作系统如下：</p>
+<ul>
+<li>嵌入式Linux</li>
+<li>Windows CE</li>
+<li>Windows XP Embedded</li>
+<li>ndows Vista Embedded</li>
+<li>ndows Embedded Compact 7</li>
+<li>Windows IoT</li>
+<li>VxWorks</li>
+<li>uCOSII</li>
+<li>QNX</li>
+<li>FreeRTOS</li>
+<li>ENEA OSE</li>
+</ul>
+<p>这个问题有待探究……</p>
 ]]></content>
       <categories>
         <category>编程</category>
@@ -71,6 +85,24 @@
 ]]></content>
       <categories>
         <category>小知识</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>STM32 的一些问题</title>
+    <url>/2020/12/20/STM32-%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<ol>
+<li><p>Exit9 gpio触发dac，发现只要有电荷就能触发<br>用一根杜邦线连上引脚，也能触发</p>
+</li>
+<li><p>STM32 操作系统的问题</p>
+</li>
+<li><p>STM32 启动的问题</p>
+</li>
+<li><p>Cube Mx 的一些问题</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>STM</category>
       </categories>
   </entry>
 </search>
